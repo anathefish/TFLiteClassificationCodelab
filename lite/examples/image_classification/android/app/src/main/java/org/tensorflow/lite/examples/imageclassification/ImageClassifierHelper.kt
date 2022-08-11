@@ -80,7 +80,8 @@ class ImageClassifierHelper(
                 MODEL_EFFICIENTNETV0 -> "efficientnet-lite0.tflite"
                 MODEL_EFFICIENTNETV1 -> "efficientnet-lite1.tflite"
                 MODEL_EFFICIENTNETV2 -> "efficientnet-lite2.tflite"
-                else -> "mobilenetv1.tflite"
+                MODEL_MOBILENETV3 -> "tf_mobilenetv3.tflite"
+                else -> "tf_mobilenetv3.tflite"
             }
 
         try {
@@ -153,9 +154,10 @@ class ImageClassifierHelper(
         const val DELEGATE_GPU = 1
         const val DELEGATE_NNAPI = 2
         const val MODEL_MOBILENETV1 = 0
-        const val MODEL_EFFICIENTNETV0 = 1
-        const val MODEL_EFFICIENTNETV1 = 2
-        const val MODEL_EFFICIENTNETV2 = 3
+        const val MODEL_MOBILENETV3 = 1
+        const val MODEL_EFFICIENTNETV0 = 2
+        const val MODEL_EFFICIENTNETV1 = 3
+        const val MODEL_EFFICIENTNETV2 = 4
 
         private const val TAG = "ImageClassifierHelper"
     }
