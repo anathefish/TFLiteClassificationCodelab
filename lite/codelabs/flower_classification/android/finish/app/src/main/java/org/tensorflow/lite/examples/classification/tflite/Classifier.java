@@ -289,7 +289,7 @@ public abstract class Classifier {
             .add(new ResizeWithCropOrPadOp(cropSize, cropSize))
             .add(new ResizeOp(imageSizeX, imageSizeY, ResizeMethod.NEAREST_NEIGHBOR))
             .add(new Rot90Op(numRoration))
-            .add(getPreprocessNormalizeOp())
+//            .add(getPreprocessNormalizeOp())
             .build();
     return imageProcessor.process(inputImageBuffer);
   }

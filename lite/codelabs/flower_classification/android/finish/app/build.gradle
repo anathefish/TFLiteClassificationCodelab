@@ -7,11 +7,11 @@ assert file(project.ext.ASSET_DIR + "/model.tflite").exists()
 assert file(project.ext.ASSET_DIR + "/labels.txt").exists()
 
 android {
-    compileSdkVersion 32
+    compileSdkVersion 33
     defaultConfig {
         applicationId "org.tensorflow.lite.examples.classification"
         minSdkVersion 21
-        targetSdkVersion 32
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
     }
